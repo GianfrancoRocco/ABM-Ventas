@@ -21,13 +21,8 @@ $aProductos = $producto->obtenerTodos();
 
   <title>Listado de productos</title>
 
-
-  <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template-->
-  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <?php include_once "bundle-config/bundle-css.php"; ?>
 
 </head>
 
@@ -168,12 +163,13 @@ $aProductos = $producto->obtenerTodos();
 
     </div>
     <!-- End of Content Wrapper -->
-      <!-- Footer -->
-      <?php include_once("footer.php") ?>
-      <!-- End of Footer -->
+
   </div>
   <!-- End of Page Wrapper -->
 
+  <!-- Footer -->
+  <?php include_once("footer.php") ?>
+  <!-- End of Footer -->
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
@@ -183,22 +179,8 @@ $aProductos = $producto->obtenerTodos();
   <!-- Logout Modal-->
   <?php include_once("modal-logout.php") ?>
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
+  <!-- Scripts -->
+  <?php include_once "bundle-config/bundle-js.php"; ?>
 
 </body>
 
