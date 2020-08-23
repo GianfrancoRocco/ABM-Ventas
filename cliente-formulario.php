@@ -47,7 +47,7 @@ if(isset($_GET["id"]) && $_GET["id"] > 0 && !isset($_POST["btnBorrar"])){
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -56,6 +56,7 @@ if(isset($_GET["id"]) && $_GET["id"] > 0 && !isset($_POST["btnBorrar"])){
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="icon" type="image/ico" href="favicon/favicon.ico">
 
   <title>Cliente</title>
 
