@@ -54,10 +54,10 @@
               </form>
               <hr>
               <div class="text-center">
-                <a class="small" href="forgot-password.html">¿Olvidaste la contraseña?</a>
+                <a class="small" href="forgot-password.php">¿Olvidaste la contraseña?</a>
               </div>
               <div class="text-center">
-                <a class="small" href="login.html">¿Ya tienes una cuenta? ¡Registrate!</a>
+                <a class="small" href="login.php">¿Ya tienes una cuenta? ¡Registrate!</a>
               </div>
             </div>
           </div>

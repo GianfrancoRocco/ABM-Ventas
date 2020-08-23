@@ -157,7 +157,7 @@ $aVentas = $venta->obtenerTodos();
                 <td><?php echo $venta->cantidad; ?></td>
                 <td><?php echo $venta->nombre_producto; ?></td>
                 <td><?php echo $venta->nombre_cliente; ?></td>
-                <td><?php echo $venta->total; ?></td>
+                <td>$<?php echo number_format($venta->total, 2, ",", "."); ?></td>
                 <td><a href="venta-formulario.php?id=<?php echo $venta->idventa; ?>"><i class="fas fa-search"></i></a></td>
               </tr>
             <?php endforeach;?>

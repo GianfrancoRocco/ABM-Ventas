@@ -26,10 +26,11 @@ if($_POST){
   if(isset($_POST["btnGuardar"])){
 
     if($_FILES["imagen"]["error"] === UPLOAD_ERR_OK){
+      $nombreAleatorio = date("Ymdhmsi");
       $archivoTmp = $_FILES["imagen"]["tmp_name"];
       $nombreArchivo = $_FILES["imagen"]["name"];
       $extension = pathinfo($nombreArchivo, PATHINFO_EXTENSION);
-      $nombreImagen = "$nombreArchivo.$extension";
+      $nombreImagen = "$nombreAleatorio.$extension";
       move_uploaded_file($archivoTmp, "files/$nombreImagen");
     }
 

@@ -152,7 +152,7 @@ $aProductos = $producto->obtenerTodos();
            <?php if($aProductos != 0): ?>
             <?php foreach($aProductos as $producto): ?>
               <tr>
-              <td><img src="files/<?php echo $producto->imagen; ?>" alt="producto-id=<?php echo $producto->idproducto; ?>" style="width: 100px;"></td>
+              <td><img src="files/<?php echo $producto->imagen; ?>" style="width: 100px;"></td>
               <td><?php echo $producto->nombre; ?></td>
               <td><?php echo $producto->cantidad; ?></td>
               <td>$<?php echo number_format($producto->precio, 2, ",", "."); ?></td>
